@@ -18,25 +18,26 @@ class Navbar extends React.Component {
 						aria-label='Toggle navigation'>
 						<span class='navbar-toggler-icon'></span>
 					</button>
-					<div class='collapse navbar-collapse justify-content-between' id='navbar1'>
-						<div class='navbar-nav'>
-							<a class='nav-item text-info nav-link' href='#'>
+					<div class='container ml-auto'>
+						<div class='collapse navbar-collapse nav-justified' id='navbar1'>
+							<a class='nav-item nav-link text-info ' href='#'>
 								Home
 							</a>
-							<a class='nav-item text-info nav-link' href='#'>
+							<a class='nav-item nav-link text-info' href='#'>
 								Profile
 							</a>
-							<a class='nav-item text-info nav-link' href='#'>
+							<a class='nav-item nav-link text-info' href='#'>
 								Order
 							</a>
-						</div>
-						<div class='navbar-nav ml-auto'>
-							<form class='form-inline'>
-								<input class='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />
-								<button class='btn btn-outline-info my-2 my-sm-0' type='submit'>
-									Search
-								</button>
-							</form>
+
+							<div class='navbar-nav ml-auto'>
+								<form class='form-inline'>
+									<input class='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />
+									<button class='btn btn-outline-info my-2 my-sm-0' type='submit'>
+										Search
+									</button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</nav>
