@@ -3,9 +3,9 @@ import React from 'react';
 class Navbar extends React.Component {
 	render() {
 		return (
-			<div class='container-fluid'>
-				<nav class='navbar navbar-expand-md fixed-top navbar-dark bg-dark'>
-					<a class='navbar-brand display-8 text-info' href='#'>
+			<nav class='navbar navbar-expand-sm navbar-dark bg-dark fixed-top'>
+				<div class='container'>
+					<a class='navbar-brand text-info d-none d-sm-inline-block' href='#'>
 						Book Fairy
 					</a>
 					<button
@@ -13,13 +13,14 @@ class Navbar extends React.Component {
 						type='button'
 						data-toggle='collapse'
 						data-target='#navbar1'
-						aria-controls='navbarNavAltMarkup'
+						aria-controls='navbar1'
 						aria-expanded='false'
 						aria-label='Toggle navigation'>
 						<span class='navbar-toggler-icon'></span>
 					</button>
-					<div class='container ml-auto'>
-						<div class='collapse navbar-collapse nav-justified' id='navbar1'>
+
+					<div class='collapse navbar-collapse' id='navbar1'>
+						<div class='navbar-nav nav-justified'>
 							<a class='nav-item nav-link text-info ' href='#'>
 								Home
 							</a>
@@ -29,19 +30,18 @@ class Navbar extends React.Component {
 							<a class='nav-item nav-link text-info' href='#'>
 								Order
 							</a>
-
-							<div class='navbar-nav ml-auto'>
-								<form class='form-inline'>
-									<input class='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />
-									<button class='btn btn-outline-info my-2 my-sm-0' type='submit'>
-										Search
-									</button>
-								</form>
-							</div>
+						</div>
+						<div class='navbar-nav ml-auto'>
+							<form class='form-inline'>
+								<input class='form-control mr-sm-2' type='search' placeholder='Search' aria-label='Search' />
+								<button class='btn btn-outline-info my-2 my-sm-0' type='submit'>
+									Search
+								</button>
+							</form>
 						</div>
 					</div>
-				</nav>
-			</div>
+				</div>
+			</nav>
 		);
 	}
 }
