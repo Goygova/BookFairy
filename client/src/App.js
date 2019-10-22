@@ -2,16 +2,15 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Header from './components/Header';
+import Carousel from './components/Carousel';
 
 function App() {
 	return (
 		<div className='App'>
-			<header className='App-header'>
-				<Header />
-			</header>
-			<body>
+			<div className='App-header'>
 				<Navbar />
-			</body>
+				<Header />
+			</div>
 		</div>
 	);
 }
