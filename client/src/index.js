@@ -12,6 +12,7 @@ const routing = (
 		<div>
 			<Route exact path='/' component={App} />
 			<Route path='/album' component={Album} />
+			<Route path='/album2' component={Album} />
 		</div>
 	</Router>
 );
