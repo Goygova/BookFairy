@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Album from './components/Album';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 import * as serviceWorker from './serviceWorker';
@@ -9,7 +10,8 @@ import * as serviceWorker from './serviceWorker';
 const routing = (
 	<Router>
 		<div>
-			<Route path='/' component={App} />
+			<Route exact path='/' component={App} />
+			<Route path='/album' component={Album} />
 		</div>
 	</Router>
 );
