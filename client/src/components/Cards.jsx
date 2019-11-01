@@ -10,7 +10,7 @@ class Cards extends React.Component {
 		return (
 			<div className='row col-sm-6'>
 				<div className='cards text-info mr-3' style={{ width: 15 + 'rem' }}>
-					<img className='card-img-top' src={Images.clever} alt='Clever'></img>
+					<img className='card-img-top' src={Images[0].url} alt='Clever'></img>
 					<div className='card-body'>
 						<h5 className='card-title'>Card title</h5>
 						<p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -20,7 +20,7 @@ class Cards extends React.Component {
 					</div>
 				</div>
 				<div className='cards text-info' style={{ width: 15 + 'rem' }}>
-					<img className='card-img-top' src={Images.melik} alt='Melik-Pashaev'></img>
+					<img className='card-img-top' src={Images[1].url} alt='Melik-Pashaev'></img>
 					<div className='card-body'>
 						<h5 className='card-title'>Card title</h5>
 						<p className='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
