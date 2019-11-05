@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
 const routing = (
 	<Router>
-		<div>
+		<div className='container d-flex-column justify-content-center'>
 			<Route exact path='/' component={App} />
 			<Route path='/album' component={Album} />
 			<Route path='/album2' component={Album} />

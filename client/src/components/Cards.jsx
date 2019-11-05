@@ -8,8 +8,8 @@ class Cards extends React.Component {
 	};
 	render() {
 		return (
-			<div className='row col-sm-6'>
-				<div className='cards text-info mr-3' style={{ width: 15 + 'rem' }}>
+			<div className='row justify-content-center'>
+				<div className='cards text-info mr-3 col-sm-3'>
 					<img className='card-img-top' src={Images[0].url} alt='Clever'></img>
 					<div className='card-body'>
 						<h5 className='card-title'>Card title</h5>
@@ -19,7 +19,7 @@ class Cards extends React.Component {
 						</button>
 					</div>
 				</div>
-				<div className='cards text-info' style={{ width: 15 + 'rem' }}>
+				<div className='cards text-info col-sm-3'>
 					<img className='card-img-top' src={Images[1].url} alt='Melik-Pashaev'></img>
 					<div className='card-body'>
 						<h5 className='card-title'>Card title</h5>
