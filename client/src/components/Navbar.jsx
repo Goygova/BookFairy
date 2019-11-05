@@ -1,6 +1,11 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 class Navbar extends React.Component {
+	handleClick = path => {
+		this.props.history.push(path);
+	};
+
 	render() {
 		return (
 			<nav className='navbar navbar-expand-sm navbar-dark bg-dark fixed-top'>
@@ -24,7 +29,7 @@ class Navbar extends React.Component {
 							<a className='nav-item nav-link text-info ' href='#'>
 								Home
 							</a>
-							<a className='nav-item nav-link text-info' href='#'>
+							<a className='nav-item nav-link text-info' onClick={() => this.handleClick('/profile')}>
 								Profile
 							</a>
 							<a className='nav-item nav-link text-info' href='#'>
@@ -46,4 +51,4 @@ class Navbar extends React.Component {
 	}
 }
 
-export default Navbar;
+export default withRouter(Navbar);
